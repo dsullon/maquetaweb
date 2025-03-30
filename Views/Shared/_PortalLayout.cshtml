@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/css/normalize.css" rel="stylesheet" />
+    <link href="~/css/app.css" rel="stylesheet">
+    <title>@ViewBag.["Title"]</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__top">
+            <div class="header__top__contenido contenedor">
+                <img class="header__logo" src="~/img/logo.svg" alt="Logo" />
+                <div class="header__info">
+                    <a href="#">+(51) 999-999-999</a>
+                    <a href="#">contacto@veterinaria.pe</a>
+                </div>
+                <img class="header__menu-mobile" src="~/img/menu.svg" alt="Menu mobile" />
+            </div>
+        </div>
+        <nav class="header__nav contenedor">
+            <a href="#">Inicio</a>
+            <a href="#">Nosotros</a>
+            <a href="#">Servicios</a>
+            <a href="#">Reservas</a>
+            <a href="#">Contacto</a>
+        </nav>
+        
+    </header>
+    <aside class="sidebar">
+        <div class="sidebar__header contenedor">
+            <img class="header__logo" src="~/img/logo.svg" alt="Logo" />
+            <img class="sidebar__cerrar" src="~/img/close.svg" alt="Menu mobile" />
+        </div>
+        <nav class="sidebar__nav contenedor">
+            <a href="#">Inicio</a>
+            <a href="#">Nosotros</a>
+            <a href="#">Servicios</a>
+            <a href="#">Reservas</a>
+            <a href="#">Contacto</a>
+        </nav>
+    </aside>
+    <div>
+        @RenderBody()
+    </div>
+
+    <footer class="footer">
+        <p>Diseño Web - Desarrollado por dsullon <span>Cibertec 2025</span></p>
+    </footer>
+
+    <script src="~/js/site.js"></script>
+</body>
+</html>
