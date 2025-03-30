@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "cklZYdlCHGdu/3F7O3K/qLw/jonHkMSn8UamN0QBHxM=",
+  "Hash": "uuURFS5FS4fBQgu6omcD2OYVXhQ1uCGQKKuRLhPgHsU=",
   "Source": "Veterinaria",
   "BasePath": "_content/Veterinaria",
   "Mode": "Default",
@@ -73,8 +73,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "0a4puo6szv",
-      "Integrity": "6H8KDMH9GBQUr2HAR8MED41YnkV5mjTXHFkK0ZbvEQQ=",
+      "Fingerprint": "zzqd6hff5e",
+      "Integrity": "Edxyq+D11O6OWs5vQQY4ZUh3N/g3HRSUQ7w/EMn+yRE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\app.css"
@@ -1510,51 +1510,6 @@
   ],
   "Endpoints": [
     {
-      "Route": "css/app.0a4puo6szv.css",
-      "AssetFile": "D:\\Personal\\Cursos\\Cibertec\\DSW\\Demos\\Veterinaria\\wwwroot\\css\\app.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "3714"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"6H8KDMH9GBQUr2HAR8MED41YnkV5mjTXHFkK0ZbvEQQ=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 29 Mar 2025 20:14:37 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "0a4puo6szv"
-        },
-        {
-          "Name": "label",
-          "Value": "css/app.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-6H8KDMH9GBQUr2HAR8MED41YnkV5mjTXHFkK0ZbvEQQ="
-        }
-      ]
-    },
-    {
       "Route": "css/app.css",
       "AssetFile": "D:\\Personal\\Cursos\\Cibertec\\DSW\\Demos\\Veterinaria\\wwwroot\\css\\app.css",
       "Selectors": [],
@@ -1565,7 +1520,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3714"
+          "Value": "4786"
         },
         {
           "Name": "Content-Type",
@@ -1573,11 +1528,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"6H8KDMH9GBQUr2HAR8MED41YnkV5mjTXHFkK0ZbvEQQ=\""
+          "Value": "\"Edxyq+D11O6OWs5vQQY4ZUh3N/g3HRSUQ7w/EMn+yRE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 29 Mar 2025 20:14:37 GMT"
+          "Value": "Sun, 30 Mar 2025 00:01:26 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1587,7 +1542,52 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-6H8KDMH9GBQUr2HAR8MED41YnkV5mjTXHFkK0ZbvEQQ="
+          "Value": "sha256-Edxyq+D11O6OWs5vQQY4ZUh3N/g3HRSUQ7w/EMn+yRE="
+        }
+      ]
+    },
+    {
+      "Route": "css/app.zzqd6hff5e.css",
+      "AssetFile": "D:\\Personal\\Cursos\\Cibertec\\DSW\\Demos\\Veterinaria\\wwwroot\\css\\app.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4786"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Edxyq+D11O6OWs5vQQY4ZUh3N/g3HRSUQ7w/EMn+yRE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 30 Mar 2025 00:01:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "zzqd6hff5e"
+        },
+        {
+          "Name": "label",
+          "Value": "css/app.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Edxyq+D11O6OWs5vQQY4ZUh3N/g3HRSUQ7w/EMn+yRE="
         }
       ]
     },

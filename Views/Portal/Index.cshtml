@@ -1,4 +1,5 @@
-﻿
+﻿@model IEnumerable<Veterinaria.Models.Servicio>
+
 @{
     ViewData["Title"] = "Index";
     Layout = "~/Views/Shared/_PortalLayout.cshtml";
@@ -22,37 +23,22 @@
             Porque su bienestar es nuestra prioridad, ofrecemos un trato cálido y profesional, asegurando que cada visita sea una experiencia segura y reconfortante. ¡Tu mejor amigo merece lo mejor!
         </p>
         <div class="servicios__contenido">
-            <div class="servicio">
-                <div class="servicio__img">
-                    <img src="~/img/consulta.jpg" alt="Consulta">
+            @foreach(var servicio in Model)
+            {
+                <div class="servicio">
+                    <div class="servicio__img">
+                        <img src="@servicio.PathImagen" alt="@servicio.Titulo">
+                    </div>
+                    <div class="servicio__info">
+                        <h2 class="servicio__titulo">@servicio.Titulo</h2>
+                        <p>
+                            @servicio.Descripcion
+                        </p>
+                    </div>
                 </div>
-                <div class="servicio__info">
-                    <h2 class="servicio__titulo">Consultas Veterinarias</h2>
-                    <p>
-                        Cuidamos la salud de tu mascota con amor y atención profesional en cada diagnóstico.
-                    </p>
-                </div>
-            </div><!--FIN DE SERVICIO-->
-            <div class="servicio">
-                <div class="servicio__img">
-                    <img src="~/img/vacunacion.jpg" alt="Vacunación">
-                </div>
-                <div class="servicio__info">
-                    <h2 class="servicio__titulo">Vacunación y Desparasitación</h2>
-                    <p>
-                        Protegemos a tu compañero con vacunas y desparasitación, brindándole bienestar y una vida saludable.
-                    </p>
-                </div>
-            </div><!--FIN DE SERVICIO-->
-            <div class="servicio">
-                <div class="servicio__img">
-                    <img src="~/img/peluqueria.jpg" alt="Baño">
-                </div>
-                <div class="servicio__info">
-                    <h2 class="servicio__titulo">Baño y Peluquería</h2>
-                    <p>Embellecemos a tu mascota con cariño, asegurando higiene, frescura y un look adorable.</p>
-                </div>
-            </div><!--FIN DE SERVICIO-->
+
+                <!--FIN DE SERVICIO-->
+            }
         </div>
     </section>
 </main>
