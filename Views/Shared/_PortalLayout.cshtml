@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width" />
     <link href="~/css/normalize.css" rel="stylesheet" />
     <link href="~/css/app.css" rel="stylesheet">
-    <title>@ViewBag.["Title"]</title>
+    <title>@ViewBag.["Title"]  - Veterinaria</title>
 </head>
 <body>
     <header class="header">
@@ -20,9 +20,10 @@
             </div>
         </div>
         <nav class="header__nav contenedor">
-            <a href="#">Inicio</a>
+            <a asp-action="Index">Inicio</a>
             <a href="#">Nosotros</a>
             <a href="#">Servicios</a>
+            <a asp-action="Productos">Productos</a>
             <a href="#">Reservas</a>
             <a href="#">Contacto</a>
         </nav>

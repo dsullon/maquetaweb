@@ -1,0 +1,56 @@
+﻿@model IEnumerable<Veterinaria.Models.Producto>
+
+@{
+    ViewData["Title"] = "Productos";
+    Layout = "~/Views/Shared/_PortalLayout.cshtml";
+}
+
+
+
+<section class="productos contenedor">
+    <h1 class="titulo-seccion">Productos</h1>
+    <form class="formulario">
+        <div class="control">
+            <label for="categoria">Categoría:</label>
+            <select name="categoria" id="categoria">
+                <option value="all">--TODOS--</option>
+                @foreach (Categoria categoria in ViewBag.categorias)
+                {
+                    <option value="@categoria.ID" selected = "@(categoria.ID==ViewBag.categoria ? "SELECTED": "")">@categoria.Nombre</option>
+                }
+            </select>
+        </div>
+        <button type="submit">Consultar</button>
+    </form>
+    <div class="productos__contenido">
+        @foreach(var producto in Model)
+        {
+            <div class="producto">
+                <img class="producto__img" src="@producto.PathImagen" alt="@producto.Nombre">
+                <div class="producto__info">
+                    <h2>@producto.Nombre</h2>
+                    <p>@producto.Descripcion</p>
+                </div>
+
+                <div class="producto__acciones">
+                    <p class="producto__precio">S/ @producto.Precio</p>
+                    <img src="~/img/shopping.svg" alt="Agregar al carrito" />
+                </div>
+            </div>
+        }
+    </div>
+    <div class="paginacion">
+        @for(int idx=0; idx < ViewBag.numeroPaginas; idx++)
+        {
+            int idxAux = idx +1;
+            string clase = @ViewBag.paginaActual == idx ? "activo" : "";
+
+            <a class="@(idx== ViewBag.paginaActual ? "activo" : "")" 
+                asp-action="Productos"
+                asp-route-categoria="@ViewBag.categoria"
+                asp-route-pag="@idxAux"
+            >@idxAux</a>
+        }
+    </div>
+
+</section>
